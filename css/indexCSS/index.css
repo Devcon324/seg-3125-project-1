@@ -1,0 +1,493 @@
+:root {
+    --green: #0D8444;
+}
+
+body{
+  overflow-x: hidden;
+  background: linear-gradient(#0D8444 0%, #004664, #0E2522) no-repeat center center fixed;
+}
+
+.main-content{
+  color: white;
+  overflow: hidden;
+}
+
+.grey{
+  background: darkgray;
+}
+
+.off_white{
+  background: whitesmoke;
+}
+
+.custom-shape-divider-top-1667151416 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background: transparent;
+}
+
+.custom-shape-divider-top-1667151416 svg {
+  position: relative;
+  display: block;
+  width: calc(148% + 1.3px);
+  height: 85px;
+}
+
+.custom-shape-divider-top-1667151416 .shape-fill {
+  fill: #0D8444;
+}
+
+.text{
+  background-color: lightgray;
+  color: black;
+}
+
+.bg-gradient
+{
+    background: linear-gradient(90deg, #0D8444 0%, #004664, #0E2522);
+}
+
+.main-content section{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.L-text-R-img{
+  display: flex;
+  padding-left: 5px;
+}
+
+.L-text-R-img p{
+  font-size: large;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.L-text-R-img img{
+  display: block;
+  align-items: right;
+  min-width: 50vh;
+  max-width: 40vw;
+  max-height: 25rem;
+}
+
+@media only screen and (max-width: 1080px) {
+  .L-text-R-img{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .L-text-R-img p{
+    padding-right: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .L-text-R-img img{
+    min-width: 50vw;
+    max-width: 70vw;
+    min-height: 50vw;
+    max-height: 70vw;
+  }
+}
+/* left-side text + right-side image - Devon Knight */
+.from-left h1{
+  text-align:right;
+  padding-right: 3px;
+}
+.R-text-L-img{
+  display: flex;
+  padding-right: 5px;
+}
+.R-text-L-img p{
+  font-size: large;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.R-text-L-img img{
+  display: block;
+  align-items: left;
+  min-width: 220px;
+  min-height: 200px;
+}
+/* Mobile adaptive breakpoint for left-side text + right-side image*/
+@media only screen and (max-width: 1080px) {
+  /* For mobile phones: */
+  .from-left h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3px;
+  }
+  .R-text-L-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 5px;
+  }
+  .R-text-L-img p{
+    padding-right: 5px;
+  }
+  .R-text-L-img img{
+    min-width: 55vw;
+    max-width: 25vw;
+    min-height: 25vw;
+    max-height: 25vw;
+  }
+}
+
+
+/* cropper for circle images, wow this was mroe difficult thani thought */
+.image-cropper {
+    min-width: 55vw;
+    max-width: 25vw;
+    min-height: 25vw;
+    max-height: 25vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+
+
+
+.appoin {
+    padding-block-start: 0;
+}
+
+.appoin-card .card-banner {
+    display: none;
+}
+
+.appoin-card .card-content {
+  background-color: var(--green);
+  padding: 80px 15px;
+  text-align: center;
+  color: white;
+}
+
+.appoin-card .section-title { color: white; }
+
+.appoin-card .section-text { margin-block: 15px 55px; }
+
+.input-field {
+  background-color: white;
+  min-height: 56px;
+  padding-inline: 25px;
+  border-radius: 5px;
+  margin-block-end: 20px;
+  outline: none;
+  outline-offset: 0;
+  color: #f1f1f1;
+  background-color: #2d83a7;
+}
+
+.input-field:focus { outline: 3px
+    solid black; }
+
+select.input-field { appearance: none; }
+
+select.input-field,
+.input-field::placeholder,
+.input-field.date {
+  color: #f1f1f1;
+  background-color: #2d83a7;
+}
+
+.input-field > option {
+    color: #f1f1f1;
+    background-color: #2d83a7;
+}
+
+.input-field.date { text-transform: uppercase; }
+
+.input-field::-webkit-calendar-picker-indicator { opacity: 0.85; }
+
+textarea.input-field {
+  padding-block: 15px;
+  min-height: 100px;
+  height: 120px;
+  max-height: 150px;
+  resize: vertical;
+  color: #f1f1f1;
+  background-color: #2d83a7;
+}
+
+.form-btn {
+    color: #f1f1f1;
+  background-color: #2d83a7;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid white;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+.form-btn:is(:hover, :focus) {
+  background-color: green;
+}
+
+
+.team-text {
+    text-align: center;
+    margin-block: 20px;
+    color: white;
+}
+
+
+
+
+
+.footer .logo {
+  text-align: center;
+  padding: 25px;
+}
+
+.footer .input-wrapper {
+  background-color: white;
+  position: relative;
+  margin: 25px;
+  padding: 15px;
+}
+
+
+.footer .email-field {
+  text-align: center;
+  margin-block-end: 15px;
+  color: inherit;
+  outline: none;
+}
+
+.footer .btn {
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-link-box {
+  display: grid;
+  gap: 50px;
+}
+
+.footer-list-title {
+  color: white;
+  text-transform: uppercase;
+  margin-block-end: 30px;
+}
+
+.footer-link::before {
+  position: static;
+  padding: 2.5px;
+  display: block;
+  border-radius: 50%;
+}
+
+.footer-link,
+.blog-card,
+.blog-card .card-date,
+.footer-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link {
+  gap: 10px;
+  margin-block-start: 8px;
+}
+
+.footer-link:is(:hover, :focus) { color: white; }
+
+.footer-link:is(:hover, :focus)::before { background-color: white; }
+
+.blog-card {
+  gap: 25px;
+  margin-block-start: 20px;
+}
+
+.blog-card .card-banner { flex-shrink: 0; }
+
+.blog-card .card-title {
+  color: white;
+  line-height: 1.5;
+  margin-block-end: 5px;
+}
+
+.blog-card .card-date {
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+
+.footer-list-item {
+  align-items: flex-start;
+  gap: 10px;
+  margin-block-start: 10px;
+}
+
+
+
+a.contact-link:is(:hover, :focus) { color: white; }
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: black;
+    padding-block-end: 30px;
+  }
+
+  .footer-top { margin-block-end: 65px; }
+
+  .footer-brand {
+    border: 1px solid white;
+    margin-block-end: 70px;
+  }
+
+  .footer .logo {
+    text-align: center;
+    padding: 25px;
+    border-block-end: 1px solid white;
+  }
+
+  .footer .input-wrapper {
+    background-color: white;
+    position: relative;
+    margin: 25px;
+    padding: 15px;
+  }
+
+  .footer .input-wrapper:focus-within { outline: 3px solid white; }
+
+  .footer .email-field {
+    text-align: center;
+    margin-block-end: 15px;
+    color: inherit;
+    outline: none;
+  }
+
+  .footer .btn {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-link-box {
+    display: grid;
+    gap: 50px;
+  }
+
+  .footer-list-title {
+    color: white;
+    font-size: fs(18);
+    font-weight: fw(600);
+    text-transform: uppercase;
+    margin-block-end: 30px;
+  }
+
+  .footer-link::before {
+    position: static;
+    padding: 2.5px;
+    background-color: white;
+    display: block;
+    border-radius: 50%;
+  }
+
+  .footer-link,
+  .blog-card,
+  .blog-card .card-date,
+  .footer-list-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-link {
+    color: white;
+    gap: 10px;
+    margin-block-start: 8px;
+  }
+
+  .footer-link:is(:hover, :focus) { color: white; }
+
+  .footer-link:is(:hover, :focus)::before { background-color: white; }
+
+  .blog-card {
+    gap: 25px;
+    margin-block-start: 20px;
+  }
+
+  .blog-card .card-banner { flex-shrink: 0; }
+
+  .blog-card .card-title {
+    color: white;
+    font-size: fs(14);
+    font-weight: fw(500);
+    line-height: 1.5;
+    margin-block-end: 5px;
+  }
+
+  .blog-card .card-title:is(:hover, :focus) { color: var(--green); }
+
+  .blog-card .card-date {
+    gap: 5px;
+    font-size: fs(13);
+    text-transform: uppercase;
+    color: white;
+  }
+
+
+  .footer-list-item {
+    align-items: flex-start;
+    gap: 10px;
+    margin-block-start: 10px;
+  }
+
+  .footer-list-item ion-icon {
+    color: var(--green);
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-block: 7px;
+  }
+
+  .contact-link {
+    color: lightgreen;
+  }
+
+  a.contact-link:is(:hover, :focus) { color: white; }
+
+  .footer-bottom {
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .serviceTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: white;
+    color: black;
+
+  }
